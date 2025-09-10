@@ -1,0 +1,59 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Unit2.h"
+#include "Unit3.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm3 *Form3;
+//---------------------------------------------------------------------------
+__fastcall TForm3::TForm3(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm3::Button1Click(TObject *Sender)
+{
+Form1->ADOTable1->Insert();
+  Form1->ADOTable1->FieldByName("Videocard")->AsString=Form3->Edit1->Text;
+  Form1->ADOTable1->FieldByName("Kol")->AsString=Form3->Edit2->Text;
+  Form1->ADOTable1->FieldByName("Cena")->AsString=Form3->Edit3->Text;
+  Form1->ADOTable1->FieldByName("Interface")->AsString=Form3->Edit4->Text;
+  Form1->ADOTable1->FieldByName("Proizv_graf_processora")->AsString=Form3->Edit5->Text;
+  Form1->ADOTable1->FieldByName("Graf_processor")->AsString=Form3->Edit6->Text;
+  Form1->ADOTable1->FieldByName("Chastota_graf_processora")->AsString=Form3->Edit7->Text;
+  Form1->ADOTable1->FieldByName("Kol_potok_processov")->AsString=Form3->Edit8->Text;
+  Form1->ADOTable1->FieldByName("Obiem_videopamiati")->AsString=Form3->Edit9->Text;
+  Form1->ADOTable1->FieldByName("Tip_videopam")->AsString=Form3->Edit10->Text;
+  Form1->ADOTable1->FieldByName("Chastota_pamiati")->AsString=Form3->Edit11->Text;
+  Form1->ADOTable1->FieldByName("Shirina_shini_pamiati")->AsString=Form3->Edit12->Text;
+  Form1->ADOTable1->FieldByName("DirectX")->AsString=Form3->Edit13->Text;
+  Form1->ADOTable1->FieldByName("Mosnost_bloka_pit")->AsString=Form3->Edit14->Text;
+  Form1->ADOTable1->FieldByName("Garantia")->AsString=Form3->Edit15->Text;
+  //Form1->ADOTable1->FieldByName("Others")->AsString=Form2->ListBox1->Text;
+  Form1->ADOTable1->Post();
+
+  Form3->Edit1->Clear();
+  Form3->Edit2->Clear();
+  Form3->Edit3->Clear();
+  Form3->Edit4->Clear();
+  Form3->Edit5->Clear();
+  Form3->Edit6->Clear();
+  Form3->Edit7->Clear();
+  Form3->Edit8->Clear();
+  Form3->Edit9->Clear();
+  Form3->Edit10->Clear();
+  Form3->Edit11->Clear();
+  Form3->Edit12->Clear();
+  Form3->Edit13->Clear();
+  Form3->Edit14->Clear();
+  Form3->Edit15->Clear();
+  Form3->Close();
+}
+//---------------------------------------------------------------------------

@@ -1,0 +1,50 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit4H
+#define Unit4H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <DBGrids.hpp>
+#include <Grids.hpp>
+#include <Buttons.hpp>
+//---------------------------------------------------------------------------
+class TForm4 : public TForm
+{
+__published:	// IDE-managed Components
+        TADOTable *ADOTable1;
+        TDBGrid *DBGrid1;
+        TDataSource *DataSource1;
+        TEdit *Edit2;
+        TBitBtn *BitBtn2;
+        TBitBtn *BitBtn3;
+        TBitBtn *BitBtn4;
+        TBitBtn *BitBtn5;
+        TBitBtn *BitBtn6;
+        TBitBtn *BitBtn7;
+        TBitBtn *BitBtn8;
+        TBitBtn *BitBtn9;
+        TListBox *ListBox1;
+        void __fastcall FormCreate(TObject *Sender);
+        void __fastcall ListBox1Click(TObject *Sender);
+        void __fastcall BitBtn2Click(TObject *Sender);
+        void __fastcall BitBtn3Click(TObject *Sender);
+        void __fastcall BitBtn4Click(TObject *Sender);
+        void __fastcall BitBtn5Click(TObject *Sender);
+        void __fastcall BitBtn6Click(TObject *Sender);
+        void __fastcall BitBtn7Click(TObject *Sender);
+        void __fastcall BitBtn8Click(TObject *Sender);
+        void __fastcall BitBtn9Click(TObject *Sender);
+        void __fastcall DBGrid1TitleClick(TColumn *Column);
+private:	// User declarations
+public:		// User declarations
+        __fastcall TForm4(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm4 *Form4;
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,346 @@
+object Form1: TForm1
+  Left = 174
+  Top = 42
+  Width = 1140
+  Height = 672
+  Caption = #1042#1080#1076#1077#1086#1082#1072#1088#1090#1072
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 8
+    Top = 376
+    Width = 361
+    Height = 249
+    Center = True
+    Proportional = True
+  end
+  object Image2: TImage
+    Left = 376
+    Top = 376
+    Width = 737
+    Height = 113
+    Center = True
+    Proportional = True
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 344
+    Width = 113
+    Height = 20
+    Caption = #1042#1080#1076#1077#1086#1082#1072#1088#1090#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 712
+    Top = 344
+    Width = 86
+    Height = 20
+    Caption = #1056#1072#1079#1098#1077#1084#1099
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 408
+    Top = 496
+    Width = 113
+    Height = 20
+    Caption = #1042#1080#1076#1077#1086#1082#1072#1088#1090#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 376
+    Top = 544
+    Width = 162
+    Height = 20
+    Caption = #1075#1088#1072#1092'. '#1087#1088#1086#1094#1077#1089#1089#1086#1088#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 392
+    Top = 528
+    Width = 145
+    Height = 20
+    Caption = #1055#1088#1086#1080#1079#1074#1086#1076#1080#1090#1077#1083#1100
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 376
+    Top = 576
+    Width = 154
+    Height = 20
+    Caption = #1043#1088#1072#1092'. '#1087#1088#1086#1094#1077#1089#1089#1086#1088
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 40
+    Width = 1105
+    Height = 297
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+    OnTitleClick = DBGrid1TitleClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Videocard'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Kol'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Cena'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Interface'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Proizv_graf_processora'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Graf_processor'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Chastota_graf_processora'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Kol_potok_processov'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Obiem_videopamiati'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Tip_videopam'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Chastota_pamiati'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Shirina_shini_pamiati'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DirectX'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Mosnost_bloka_pit'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Garantia'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Others'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Img_1'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Img_2'
+        Visible = True
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Top = 8
+    Width = 240
+    Height = 25
+    DataSource = DataSource1
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 216
+    Top = 344
+    Width = 75
+    Height = 25
+    Caption = #1047#1072#1075#1088#1091#1079#1080#1090#1100
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 960
+    Top = 344
+    Width = 75
+    Height = 25
+    Caption = #1047#1072#1075#1088#1091#1079#1080#1090#1100
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 296
+    Top = 344
+    Width = 75
+    Height = 25
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+    TabOrder = 4
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 1040
+    Top = 344
+    Width = 75
+    Height = 25
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+    TabOrder = 5
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 456
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = #1059#1076#1072#1083#1080#1090#1100
+    TabOrder = 6
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 344
+    Top = 8
+    Width = 105
+    Height = 25
+    Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100
+    TabOrder = 7
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 264
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = #1044#1086#1073#1072#1074#1083#1077#1085#1080#1077
+    TabOrder = 8
+    OnClick = Button7Click
+  end
+  object Edit1: TEdit
+    Left = 536
+    Top = 496
+    Width = 177
+    Height = 21
+    TabOrder = 9
+    OnChange = Edit1Change
+  end
+  object Edit2: TEdit
+    Left = 536
+    Top = 536
+    Width = 177
+    Height = 21
+    TabOrder = 10
+    OnChange = Edit2Change
+  end
+  object Edit3: TEdit
+    Left = 536
+    Top = 576
+    Width = 177
+    Height = 21
+    TabOrder = 11
+    OnChange = Edit3Change
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=videocard2.mdb;Pers' +
+      'ist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 136
+    Top = 104
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 136
+    Top = 64
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'videopam'
+    Left = 136
+    Top = 144
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 184
+    Top = 152
+  end
+end
